@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>320</y>
+      <w>170</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Dado
+--
+caraVisible: int
+--
+devolverCaraVisible():int
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>20</y>
+      <w>150</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>VistaConsola
+--
+--
+VistaConsola();
+iniciarJuego():void;
+seguirJuego():void;
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>10</y>
+      <w>220</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>ControlCraps
+--
+ControlCraps();
+calcularTiroSalida():void;
+determinarEstadoJuego():void;
+rondaPunto():void;
+setAbandono():void;
+getTiro():int;
+getPunto():int;
+getEstado():int;
+getCarasDados():int[];
+getCaraDado1():int;
+getCaraDado2():int;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>50</y>
+      <w>130</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+fg=red</panel_attributes>
+    <additional_attributes>90.0;10.0;110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>210</y>
+      <w>40</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=2
+
+fg=red</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>180</y>
+      <w>100</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>PrincipalCraps
+--
+main()
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>100</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+fg=blue
+bg=light_gray</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+</diagram>
